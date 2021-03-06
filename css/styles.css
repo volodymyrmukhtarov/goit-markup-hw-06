@@ -1,4 +1,4 @@
-/* body {
+body {
   margin: 0;
   color: var(--text-head-color);
   font-family: "Roboto", sans-serif;
@@ -49,12 +49,12 @@ button {
   --background-team: #f5f4fa;
   --border-work-examples: #eeeeee;
   --portfolio-border: #ececec;
-} */
-/* .container {
+}
+.container {
   width: 1200px;
   margin: 0 auto;
   padding: 0px 15px;
-} */
+}
 
 /*======= HEADER ======*/
 .header {
@@ -210,10 +210,7 @@ button {
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-button:hover,
-.hero-button:focus {
-  color: black;
-}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -391,7 +388,11 @@ button {
   outline: transparent;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.agreement-terms-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .modal-form-agreements {
   display: flex;
   align-items: center;
@@ -524,7 +525,7 @@ button {
   display: flex;
 }
 
-.imeges-list :not(:last-child) {
+.whotwedo-item {
   margin-right: 30px;
 }
 .whotwedo-overlay {
@@ -548,7 +549,7 @@ button {
 /* -- Team -- */
 
 .our-team {
-  padding: 95px;
+  padding: 95px 0px;
   background-color: #f5f4fa;
 }
 .our-team-title {
@@ -734,6 +735,7 @@ button {
   text-transform: uppercase;
 }
 .join-us {
+  margin-right: 93px;
   font-weight: 900;
   font-size: 14px;
   line-height: 1.142;
@@ -807,8 +809,8 @@ button {
 .footer-action-call {
   margin-bottom: 20px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -820,7 +822,7 @@ button {
 .footer-submit-input {
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
+  box-sizing: border--box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
@@ -905,6 +907,10 @@ button {
 .button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+}
+.project-card-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-card {
   display: flex;
